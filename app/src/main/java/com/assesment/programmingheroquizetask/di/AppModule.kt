@@ -1,6 +1,7 @@
 package com.assesment.programmingheroquizetask.di
 
 import com.assesment.programmingheroquizetask.network.QuestionService
+import com.assesment.programmingheroquizetask.repository.QuestionRepository
 import com.assesment.programmingheroquizetask.util.Constants
 import dagger.Module
 import dagger.Provides
@@ -14,9 +15,9 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object AppModule {
 
- /*   @Singleton
+    @Singleton
     @Provides
-    fun provideQuestionRepository(api: QuestionService) = QuestionRepository(api)*/
+    fun provideQuestionRepository(api: QuestionService) = QuestionRepository(api)
 
     @Singleton
     @Provides
